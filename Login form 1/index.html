@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login form</title>
+    <script src="translation.js"></script>
+  </head>
+  <body>
+    <div class="language-selector">
+      <button onclick="setLanguage('en')">
+        <ion-icon name="flag-outline"></ion-icon> English
+      </button>
+      <button onclick="setLanguage('sv')">
+        <ion-icon name="flag-outline"></ion-icon> Svenska
+      </button>
+    </div>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2 data-translate="login">Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" placeholder=" " required />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" placeholder=" " required />
+              <label for="" data-translate="password">Password</label>
+            </div>
+            <div class="forgot">
+              <label for="" class="remember-me" data-translate="rememberme">
+                <p data-translate="rememberme">
+                  Remember me
+                  <a href="#" data-translate data-translate-href="forgot"
+                    >Forgot password?</a
+                  >
+                </p>
+              </label>
+            </div>
+            <button data-translate="login">Log in</button>
+            <div class="register">
+              <p data-translate="account">
+                Don't have an account?
+                <a href="#" data-translate data-translate-href="register"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
